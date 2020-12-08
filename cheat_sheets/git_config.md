@@ -3,9 +3,6 @@
 [user]
         name = Mikhail Drozdetskiy
         email = m.drozdetskiy@gmail.com
-# Please adapt and uncomment the following lines:
-#       name = Mikhail Drozdetskiy
-#       email = m_drozdetskiy@wargaming.net
 [color]
     ui = auto
 [alias]
