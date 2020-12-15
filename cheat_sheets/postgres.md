@@ -20,4 +20,14 @@ ps -ef | grep postgres
 psql: error: could not connect to server: could not connect to server: No such file or directory
 /usr/local/var/postgres/postmaster.pid
 ```
+
+### Run postgres in docker
+```
+docker run -d --name postgres_12 -e POSTGRES_PASSWORD=postgres -p 127.0.0.1:5432:5432 -v $(pwd):/var/lib/postgresql/data postgres
+
+docker exec -it postgres_12 psql -U postgres
+
+psql -U postgres -h localhost
+```
+
 ## Features
